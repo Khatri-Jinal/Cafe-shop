@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="row clearfix">
+          <img src="Images/logo.jpg" class="logo" />
+          <ul class="main-nav animated slideInDown" id="checking">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="mainframe.html">MENU</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="feedback.html">FEEDBACK</a></li>
+          </ul>
+          <a href="#" class="mobicon" onclick="slideshow()"
+            ><i class="fa fa-bars"></i
+          ></a>
+        </div>
+      </nav>
+      <div class="dq">
+        <strong>How satisfied are you with our services?</strong>
+      </div>
+
+      <div class="main-head-feedback">
+        <form action="userreview()" method="GET">
+          <div class="star">
+            <p id="1" onclick="chngylw()" class="feed">
+              <i class="fa fa-star"></i>
+            </p>
+            <p id="2" class="feed">
+              <i class="fa fa-star" onclick="chngylw1()"></i>
+            </p>
+            <p id="3" class="feed">
+              <i class="fa fa-star" onclick="chngylw2()"></i>
+            </p>
+            <p id="4" class="feed">
+              <i class="fa fa-star" onclick="chngylw3()"></i>
+            </p>
+            <p id="5" class="feed">
+              <i class="fa fa-star" onclick="chngylw4()"></i>
+            </p>
+          </div>
+
+          <label for="name">Name:</label>
+          <input type="text" maxlength="10" id="name" /><br /><br />
+          <label for="comments">Review:</label>
+          <input type="text" maxlength="75" id="comments" /><br/<br />
+          <button class="btn" id="send" onclick="userreview()">
+            <a href="thanks.html" class="sendR">Send review</a>
+          </button>
+        </form>
+      </div>
+    </header>
+    <script src="script.js"></script>
+  </body>
+</html>
